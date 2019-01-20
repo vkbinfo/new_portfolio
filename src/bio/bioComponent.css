@@ -1,0 +1,19 @@
+.Location-symbol {
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.Calendar-symbol {
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.Location {
+    margin-left: 25px;
+}
+
+.DOB-section {
+    margin-top: 20px;
+}

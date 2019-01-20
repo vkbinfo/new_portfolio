@@ -4,7 +4,9 @@ import './timeLineComponent.css'
 
 class TimeLineComponent extends Component {
     render() {
-        return <div></div>
+        return <div>
+
+        </div>
     }
 }
 
