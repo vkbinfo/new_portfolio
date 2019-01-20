@@ -1,0 +1,51 @@
+.Container {
+    position: relative;
+    align-items: center;
+}
+
+.Cover-photo {
+    margin-top: -250px;
+    width: 100%;
+}
+.Profile-pic {
+    position: absolute;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    left: 130px;
+    top: 245px;
+    z-index: 1;
+}
+.Article {
+    position: absolute;
+    top: 336px;
+    background: #e6ecf0;
+    min-width: 100%;
+    height: 100%;
+}
+
+.MainContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.Bio {
+    width: 20%;
+    min-height: 300px;
+    margin: 20px;
+}
+.Time-line {
+    width: 40%;
+    background: white;
+    min-height: 500px;
+    margin: 20px;
+}
+.Follow {
+    width: 20%;
+    background: white;
+    min-height: 300px;
+    margin: 20px;
+}
