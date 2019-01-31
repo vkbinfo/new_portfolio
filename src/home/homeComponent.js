@@ -18,7 +18,6 @@ class HomeComponent extends Component {
                     </div>
                     <div className='Time-line'>
                         <Switch>
-                            <Route exact path='/'></Route>
                             <Route exact path={'/experience'} component={TimeLineComponent} />
                             <Route exact path={'/bio'} />
                         </Switch>
