@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './homeComponent.css';
 import NavBarComponent from '../navbar/navbarComponent'
 import BioComponent from '../bio/bioComponent'
@@ -17,21 +17,11 @@ class HomeComponent extends Component {
                         <BioComponent ></BioComponent>
                     </div>
                     <div className='Time-line'>
-                        <Router>
-                            <Switch>
-                                <Route exact path='/'></Route>
-                                <Route exact path={'/experience'} children={(props) => {
-                                    console.log(props);
-                                    return <TimeLineComponent {...props} />
-                                }
-                                }></Route>
-                                <Route exact path={'/bio'} children={(props) => {
-                                    console.log(props);
-                                    return <div>Bio</div>
-                                }
-                                }></Route>
-                            </Switch>
-                        </Router>
+                        <Switch>
+                            <Route exact path='/'></Route>
+                            <Route exact path={'/experience'} component={TimeLineComponent} />
+                            <Route exact path={'/bio'} />
+                        </Switch>
                     </div>
                     <div className='Follow'></div> {/* // placeholder for whom I follow. */}
                 </div>
