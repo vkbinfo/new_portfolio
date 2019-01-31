@@ -1,5 +1,5 @@
-.Company-container{
-  margin: 16px;
+.Element-container{
+  margin: 24px;
   background: #f1f1f1;
   padding: 28px 14px 28px 14px;
   display: flex;
@@ -20,7 +20,7 @@
   margin-left: 15px;
 }
 
-.Company-name {
+.element-heading {
   font-size: 14px;
   line-height: 21px;
   text-align: start;
@@ -28,13 +28,13 @@
   fill: #666666;
 }
 
-.Position{
+.element-subheading{
   font-size: 16px;
   line-height: 21px;
   text-align: start;
 }
 
-.Work-disc {
+.element-discription {
   font-size: 13px;
   line-height: 21px;
   text-align: start;

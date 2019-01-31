@@ -6,9 +6,6 @@ import './navbar.css'
 class NavBarComponent extends Component {
   render() {
     return <div className='Navbar'>
-      <NavLink to="/bio" className="Nav-element" activeClassName="Selected">
-        Bio
-      </NavLink>
       <NavLink to="/projects" className="Nav-element" activeClassName="Selected">
         Projects
       </NavLink>
@@ -18,7 +15,9 @@ class NavBarComponent extends Component {
       <NavLink to="/blog" className="Nav-element" activeClassName="Selected">
         Blog
       </NavLink>
-
+      <NavLink to="/bio" className="Nav-element" activeClassName="Selected">
+        About Me
+      </NavLink>
     </div>
   }
 }

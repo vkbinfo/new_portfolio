@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './homeComponent.css';
 import NavBarComponent from '../navbar/navbarComponent'
 import BioComponent from '../bio/bioComponent'
-import TimeLineComponent from '../timeline/timeLineComponent';
+import ExperienceComponent from '../experience/experienceComponent';
 
 class HomeComponent extends Component {
     render() {
@@ -18,7 +18,7 @@ class HomeComponent extends Component {
                     </div>
                     <div className='Time-line'>
                         <Switch>
-                            <Route exact path={'/experience'} component={TimeLineComponent} />
+                            <Route exact path={'/experience'} component={ExperienceComponent} />
                             <Route exact path={'/bio'} />
                         </Switch>
                     </div>

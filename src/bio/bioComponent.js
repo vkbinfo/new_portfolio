@@ -15,7 +15,7 @@ class BioComponent extends Component {
             </p>
             <img className='Location-symbol' src={locationSVG} alt='location symbol'></img> <div className='Location'>Earth</div>
             <div class='DOB-section'>
-                <img className='Calendar-symbol' src={calendar} alt='Calendar symbol'></img> <div className='Location'>Joined Human Race on 3rd August 1992.</div>
+                <img className='Calendar-symbol' src={calendar} alt='Calendar symbol'></img> <div className='Location'>Officialy Joined Human Race on 3rd August 1992.</div>
             </div>
         </div>
     }
