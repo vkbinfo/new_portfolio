@@ -45,7 +45,7 @@ let projectData = {
     discription: 'Tech Stack:- [ Angular2, AWS Incognito, Typescript ]'
   },
   {
-    link: '',
+    link: 'https://github.com/vkbinfo/udacityNeighborhood',
     imageTag: 'NeighborHood—​Google Maps Project',
     imageSrc: "https://s3.amazonaws.com/poly-screenshots.angel.co/Project/3e/734762/dc0c94f8b05edfb78d43459df728f976-original.png",
     heading: 'NeighborHood—​Google Maps Project',
@@ -64,12 +64,12 @@ let projectData = {
   },
   {
     link: '',
-    imageTag: 'Hobby Listing',
-    imageSrc: "https://s3.amazonaws.com/poly-screenshots.angel.co/Project/3b/734758/03e5c2487ba3897e296d6d8b18aa03a0-original.png",
-    heading: 'Chegg India',
-    subheading: 'A General Project for Category listing of hobbies.',
+    imageTag: 'Game Playing Agent — M​aking an AI agent to play Isolation game',
+    imageSrc: "https://s3.amazonaws.com/poly-screenshots.angel.co/Project/c4/734757/cc888ca92597af2d5071728f0840eb42-original.png",
+    heading: 'Game Playing Agent — M​aking an AI agent to play Isolation game',
+    subheading: 'A game player agent for Isolation game.',
     timeTaken: '',
-    discription: 'Tech Stack:- [ Python, Flask, AWS(lightsail), PostgreSQL, Jinga2 ]'
+    discription: 'Built an AI agent that can play an Isolation game.Implemented Minimax algorithm and a heuristic solution for AI agent. By using a good heuristic function, increased winning ratio from ~50% to ~70% against other agents.'
   },
   ]
 }
