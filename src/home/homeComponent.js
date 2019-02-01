@@ -5,6 +5,7 @@ import NavBarComponent from '../navbar/navbarComponent'
 import BioComponent from '../bio/bioComponent'
 import ExperienceComponent from '../experience/experienceComponent';
 
+import { experienceData, projectData } from '../data/timeLineData';
 class HomeComponent extends Component {
     render() {
         return (<div className='Container'>
@@ -18,11 +19,18 @@ class HomeComponent extends Component {
                     </div>
                     <div className='Time-line'>
                         <Switch>
-                            <Route exact path={'/experience'} component={ExperienceComponent} />
+                            <Route exact path={'/experience'} render={(props) =>
+                                <ExperienceComponent {...props} data={experienceData} />
+                            }
+                            />
+                            <Route exact path={'/projects'} render={(props) =>
+                                <ExperienceComponent {...props} data={projectData} />
+                            }
+                            />
                             <Route exact path={'/bio'} />
                         </Switch>
                     </div>
-                    <div className='Follow'></div> {/* // placeholder for whom I follow. */}
+                    <div className='Follow'>Recent Commits</div> {/* // placeholder for whom I follow. */}
                 </div>
             </article>
         </div >);
