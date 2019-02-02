@@ -33,7 +33,7 @@ class HomeComponent extends Component {
                             <Route exact path={'/'} render={() => (<Redirect to="/about" />)} />
                         </Switch>
                     </div>
-                    <div className='Follow'>
+                    <div className='Recent-commits'>
                         <GithubComponent></GithubComponent>
                     </div> {/* // placeholder for whom I follow. */}
                 </div>
