@@ -10,22 +10,30 @@ class GithubComponent extends Component {
     axios.get('https://api.github.com/users/vkbinfo/events').then((eventData) => {
       let commitsInLastThreePushEvent = eventData.data.slice(0, 4).reduce((acc, event) => acc.concat(event.payload.commits.map(commit => {
         let commitDiffUrl = `https://github.com/${event.repo.name}/commit/${commit.sha}`;
+        let repoName = event.repo.name.split('/')[1] // the format is username/reponame so I am splitting it.
         let timeAfterPush = Date.now() - Date.parse(event.created_at);
-        let minutes = Math.round((timeAfterPush % (1000 * 60 * 60)) / (1000 * 60))
-        let hours = Math.round(timeAfterPush / (1000 * 60 * 60));
-        return { ...commit, url: commitDiffUrl }
+        return { ...commit, url: commitDiffUrl, timeAfterPush, repoName }
       })), []);
-      let commits = commitsInLastThreePushEvent.map(commit => {
+      let commits = commitsInLastThreePushEvent.sort((commitA, commitB) => commitA.timeAfterPush > commitB.timeAfterPush).map(commit => {
         let commitMessage = commit.message;
         let commitUrl = commit.url;
-        return { commitMessage, commitUrl };
-      }).slice(0, 4);
-      console.log(commits);
+        let timeAfterPush = commit.timeAfterPush;
+        let minutes = Math.round((timeAfterPush % (1000 * 60 * 60)) / (1000 * 60))
+        let hours = Math.round(timeAfterPush / (1000 * 60 * 60));
+        let timeAfterPushString = `${hours} hours and ${minutes} minutes ago in `
+        return { commitMessage, commitUrl, timeAfterPushString, repoName: commit.repoName };
+      }).slice(0, 4); // Only showing 4 commit messages.
       this.setState({ commits })
     })
   }
   render() {
-    let commitListElements = this.state.commits.map(commit => <a href={commit.commitUrl} target="_blank" rel="noopener noreferrer">{commit.commitMessage}</a>)
+    let commitListElements = this.state.commits.map(commit => {
+      return (<div class='Commit-container'>
+        <a href={commit.commitUrl} target="_blank" rel="noopener noreferrer">{commit.commitMessage}</a>
+        <div className='Time-repo'>{commit.timeAfterPushString}<a href={`https://github.com/${commit.repoName}`} target="_blank" rel="noopener noreferrer">{commit.repoName}</a></div>
+      </div>)
+    }
+    )
     return <div className='GitHub-part'>
       <span className='Github-title'>Latest Commits on => </span>
       <span><img className='GitHub-logo' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt='Github Logo'></img></span>

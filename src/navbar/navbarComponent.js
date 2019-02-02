@@ -15,7 +15,7 @@ class NavBarComponent extends Component {
       <NavLink to="/blog" className="Nav-element" activeClassName="Selected">
         Blog
       </NavLink>
-      <NavLink to="/bio" className="Nav-element" activeClassName="Selected">
+      <NavLink to="/about" className="Nav-element" activeClassName="Selected">
         About Me
       </NavLink>
     </div>

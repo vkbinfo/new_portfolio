@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './homeComponent.css';
 import NavBarComponent from '../navbar/navbarComponent'
 import BioComponent from '../bio/bioComponent'
@@ -7,6 +7,7 @@ import ExperienceComponent from '../experience/experienceComponent';
 
 import { experienceData, projectData } from '../data/timeLineData';
 import GithubComponent from '../github/githubComponent';
+import AboutComponent from '../about/aboutComponent';
 class HomeComponent extends Component {
     render() {
         return (<div className='Container'>
@@ -28,7 +29,8 @@ class HomeComponent extends Component {
                                 <ExperienceComponent {...props} data={projectData} />
                             }
                             />
-                            <Route exact path={'/bio'} />
+                            <Route exact path={'/about'} component={AboutComponent} />
+                            <Route exact path={'/'} render={() => (<Redirect to="/about" />)} />
                         </Switch>
                     </div>
                     <div className='Follow'>

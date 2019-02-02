@@ -1,0 +1,24 @@
+.About {
+  margin: 12px;
+  padding: 10px 30px;
+  background: #fff;
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+}
+
+p {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.Links {
+  font-size: 1.5em;
+  margin-bottom: .55em;
+}
+
+li{
+  margin-top: 10px;
+}
