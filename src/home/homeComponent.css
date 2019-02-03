@@ -4,7 +4,7 @@
 }
 
 .Cover-photo {
-    margin-top: -250px;
+    margin-top: -212px;
     width: 100%;
 }
 .Profile-pic {
@@ -12,8 +12,8 @@
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    left: 130px;
-    top: 245px;
+    left: 100px;
+    top: 235px;
     z-index: 1;
 }
 .Article {
@@ -39,7 +39,7 @@
     margin-top: 40px;
 }
 .Time-line {
-    width: 40%;
+    width: 35%;
     background: white;
     min-height: 500px;
     margin: 20px;
