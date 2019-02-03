@@ -35,8 +35,8 @@ class GithubComponent extends Component {
     }
     )
     return <div className='GitHub-part'>
-      <span className='Github-title'>Latest Commits on => </span>
-      <span><img className='GitHub-logo' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt='Github Logo'></img></span>
+      <span className='Github-title'>Latest Commits on </span>
+      <div><img className='GitHub-logo' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt='Github Logo'></img></div>
       <div className='Commits'>
         {commitListElements}
       </div>

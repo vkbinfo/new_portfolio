@@ -1,14 +1,14 @@
 
 .GitHub-part {
   margin: 10px;
-  position: relative;
+  text-align: center;
 }
 
 .GitHub-logo {
-  height: 30px;
-  width: 30px;
-  position: absolute;
+  height: 35px;
+  width: 35px;
 }
+
 .Github-title {
   color: #363636;
   font-size: 2rem;
@@ -24,9 +24,9 @@
 }
 
 .Commit-container {
-  background: #f1f1f1;
   padding: 12px;
   margin-top: 20px;
+  border-top: 1px solid #e6ecf0;
 }
 
 .Time-repo {

@@ -1,18 +1,22 @@
 .Element-container{
-  margin: 24px;
-  background: #f1f1f1;
-  padding: 28px 14px 28px 14px;
+  padding: 10px 14px 28px 14px;
   display: flex;
-  flex-direction: row;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+  float: left;
 }
 
 .Image-container {
-  margin: 8px;
+  margin-top: 5px;
+  margin-left: 10px; 
 }
+
 
 .Image {
   height: 60px;
   width: 60px;
+  border: 0.5px solid #e6ecf0;
+  border-radius: 15px;
 }
 
 .Text-container {

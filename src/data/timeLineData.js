@@ -3,6 +3,9 @@ let experienceData = {
     height: '60px',
     width: '60px'
   },
+  flexDirectionStyle: {
+    'flex-direction': 'row-reverse',
+  },
   coreData: [{
     imageTag: 'Pesto Tech',
     imageSrc: "https://d1qb2nb5cznatu.cloudfront.net/startups/i/5001643-cc60fc70ac9239ed7f038da685f19928-medium_jpg.jpg?buster=1512196533",
@@ -32,8 +35,15 @@ let experienceData = {
 
 let projectData = {
   imageStyle: {
-    height: '120px',
-    width: '120px'
+    height: '100%',
+    width: '100%',
+  },
+  imageContainerStyle: {
+    'margin-top': '20px',
+    'margin-left': '20px',
+  },
+  flexDirectionStyle: {
+    'flex-direction': 'column',
   },
   coreData: [{
     link: 'https://polly.elucidata.io',

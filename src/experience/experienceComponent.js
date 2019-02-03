@@ -6,11 +6,11 @@ import './experience.css'
 class ExperienceComponent extends Component {
     render() {
         let timeLineComponentArray = this.props.data.coreData.reduce((acc, element) => {
-            acc.push(<TimeLineComponent data={element} imageStyle={this.props.data.imageStyle} />);
+            acc.push(<TimeLineComponent data={element} elementData={this.props.data} />);
             return acc;
         }, []);
 
-        return <div>
+        return <div className='Main-container'>
             {timeLineComponentArray}
         </div >
     }
