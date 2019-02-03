@@ -11,7 +11,7 @@ class TimeLineComponent extends Component {
         return <div>
             <div className='Element-container' style={flexDirectionStyle}>
                 <div className="Text-container">
-                    <a href={element.link} target="_blank" rel="noopener noreferrer"><div className="element-heading">{element.heading}</div></a>
+                    <a href={element.link} target="_blank" rel="noopener noreferrer"><h3 className="element-heading">{element.heading}</h3></a>
                     <div className="element-subheading"><bold>{element.subheading}</bold> {element.timeTaken}</div>
                     <div className="element-discription">{element.discription}</div>
                 </div>
