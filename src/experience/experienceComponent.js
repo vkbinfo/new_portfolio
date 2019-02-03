@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import TimeLineComponent from '../common/timeLineComponent/timeLineComponent'
+import TimeLineComponent from '../timeLineComponent/timeLineComponent'
 import './experience.css'
 
 class ExperienceComponent extends Component {

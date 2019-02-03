@@ -57,7 +57,7 @@ let projectData = {
     link: '',
     imageTag: 'Hobby Listing',
     imageSrc: "https://s3.amazonaws.com/poly-screenshots.angel.co/Project/3b/734758/03e5c2487ba3897e296d6d8b18aa03a0-original.png",
-    heading: 'Chegg India',
+    heading: 'Hobby Listing',
     subheading: 'A General Project for Category listing of hobbies.',
     timeTaken: '',
     discription: 'Tech Stack:- [ Python, Flask, AWS(lightsail), PostgreSQL, Jinga2 ]'
