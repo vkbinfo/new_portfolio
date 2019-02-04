@@ -4,6 +4,7 @@ import './homeComponent.css';
 import NavBarComponent from '../navbar/navbarComponent'
 import BioComponent from '../bio/bioComponent'
 import ExperienceComponent from '../experience/experienceComponent';
+import BlogComponent from '../blog/blogComponent';
 
 import { experienceData, projectData } from '../data/timeLineData';
 import GithubComponent from '../github/githubComponent';
@@ -30,6 +31,7 @@ class HomeComponent extends Component {
                             }
                             />
                             <Route exact path={'/about'} component={AboutComponent} />
+                            <Route exact path={'/blog'} component={BlogComponent} />
                             <Route exact path={'/'} render={() => (<Redirect to="/about" />)} />
                         </Switch>
                     </div>

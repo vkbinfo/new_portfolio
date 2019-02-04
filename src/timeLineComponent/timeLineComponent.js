@@ -7,7 +7,6 @@ class TimeLineComponent extends Component {
     render() {
         let element = this.props.data;
         let { imageStyle, flexDirectionStyle, imageContainerStyle } = this.props.elementData
-        console.log(flexDirectionStyle);
         return <div>
             <div className='Element-container' style={flexDirectionStyle}>
                 <div className="Text-container">
