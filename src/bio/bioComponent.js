@@ -7,8 +7,8 @@ import calendar from '../static/calendar.svg';
 class BioComponent extends Component {
     render() {
         return <div>
-            <h3>Vikash Kumar Bijarnia</h3>
-            <h4>@I_M_Zarathustra</h4>
+            <h3>Vikash</h3>
+            <h4 className='Twitter-username'>@I_M_Zarathustra</h4>
             <p>A Teacher and A Full stack developer on a mission to improve the world for all humans.
                  Productive collaborator in great teams utilizing hard skills to make awesome products
                  and software services.

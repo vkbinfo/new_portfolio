@@ -2,8 +2,12 @@
   padding: 10px 14px 28px 14px;
   display: flex;
   border-bottom: 1px solid #e6ecf0;
-  border-top: 1px solid #e6ecf0;
+  /* border-top: 1px solid #e6ecf0; */
   float: left;
+}
+
+.Element-container:hover {
+  background-color: #f5f8fa;
 }
 
 .Image-container {

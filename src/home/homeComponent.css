@@ -51,3 +51,55 @@
     margin: 20px;
     padding: 30px;
 }
+
+@media only screen and (min-width: 600px ) and (max-width: 1185px) {
+    .Profile-pic {
+        left: 34%;
+        top: 7%;
+    }
+    .MainContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Bio {
+        width: 60%;
+    }
+    .Time-line {
+        width: 60%;
+    }
+    .Recent-commits {
+        width: 60%;
+    }
+
+  }
+
+@media only screen and (max-width: 600px) {
+    .Cover-photo {
+        display: none;
+    }
+    .Profile-pic {
+        left: 25%;
+        top: 50px;
+    }
+    .MainContent {
+        padding: 16px;
+        flex-direction: column;
+    }
+    
+    .Bio {
+        width: 100%;
+        margin-top: -85px;
+    }
+    .Time-line {
+        width: 100%;
+    }
+    .Recent-commits {
+        width: 86%;
+    }
+
+    .body {
+        padding-right: 10px;
+    }
+  }
+
+
