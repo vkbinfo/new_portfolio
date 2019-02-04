@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import navBarLogoSVG from '../static/navbarLogo.svg'
+import crossLogoSVG from '../static/crossLogo.svg'
 import './navbar.css'
 
 
@@ -27,7 +28,7 @@ class NavBarComponent extends Component {
     console.log('Current toggle value', this.state.showNavbar);
     return <div className='Navbar-Container'>
       <div className='NavBar-logo' >
-        <img className='Navbar-symbol' onClick={this.toggleNavBar} src={navBarLogoSVG} alt='Navbar symbol'></img>
+        <img className='Navbar-symbol' onClick={this.toggleNavBar} src={(this.state.showNavbar ? crossLogoSVG : navBarLogoSVG)} alt='Navbar symbol'></img>
         <div className={'Navbar ' + (this.state.showNavbar ? 'Display' : 'No-display')} onClick={this.toggleNavBar}>
           <NavLink to="/projects" className="Nav-element" activeClassName="Selected">
             Projects

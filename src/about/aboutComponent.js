@@ -24,6 +24,9 @@ class AboutComponent extends Component {
         <li><a href="https://stackoverflow.com/users/6603988/simplemath" >StackOverFlow</a></li>
         <li><a href="https://www.linkedin.com/in/vikash-kumar-bijarnia-6108a1a1/" >LinkeIn</a></li>
       </ul>
+
+      <p className='Links'>Contact info:</p>
+      <a href="mailto:vkb.info@gmail.com">vkb.info@gmail.com</a>
     </div>
   }
 }

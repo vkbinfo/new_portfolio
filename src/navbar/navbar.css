@@ -34,18 +34,23 @@
 @media only screen and (max-width: 600px) {
   .Navbar-Container {
     width: 100%;
+    background: #e6ecf0;
     height: fit-content;
   }
 
   .NavBar-logo {
     display: flex;
     position: fixed;
-    background-color: white;
-    top: 17px;
+    background-color: #e6ecf0;
+    top: 10px;
     left: 13px;
+    z-index: 100;
   }
 
   .Navbar-symbol {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
     display: flex;
   }
 
@@ -60,6 +65,7 @@
 
 .Display {
   display: flex;
+  background-color: white;
 }
 
 .No-display {
