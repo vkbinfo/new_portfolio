@@ -8,7 +8,8 @@ class GithubComponent extends Component {
   }
   componentDidMount() {
     axios.get('https://api.github.com/users/vkbinfo/events').then((eventData) => {
-      let commitsInLastThreePushEvent = eventData.data.slice(0, 4).reduce((acc, event) => acc.concat(event.payload.commits.map(commit => {
+      console.log(eventData);
+      let commitsInLastThreePushEvent = eventData.data.slice(5, 9).reduce((acc, event) => acc.concat(event.payload.commits.map(commit => {
         let commitDiffUrl = `https://github.com/${event.repo.name}/commit/${commit.sha}`;
         let repoName = event.repo.name.split('/')[1] // the format is username/reponame so I am splitting it.
         let timeAfterPush = Date.now() - Date.parse(event.created_at);
