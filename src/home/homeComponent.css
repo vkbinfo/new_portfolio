@@ -41,6 +41,7 @@
     width: 35%;
     background: white;
     margin: 20px;
+    padding-bottom: 14px;
 }
 .Recent-commits {
     width: 25%;
@@ -102,7 +103,7 @@
 
     .body {
         padding: 0px;
-        margin: 0px;
+        margin: 10px !important;
     }
   }
 

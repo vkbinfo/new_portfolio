@@ -9,7 +9,6 @@ class NavBarComponent extends Component {
   constructor(props) {
     super(props);
     this.toggleNavBar = this.toggleNavBar.bind(this);
-    console.log('widht', document.body.clientWidth)
     this.state = {
       showNavbar: true
     }
@@ -20,12 +19,10 @@ class NavBarComponent extends Component {
   toggleNavBar() {
     if (document.body.clientWidth < 600) {
       const showNavbar = !this.state.showNavbar
-      console.log('Toggling');
       this.setState({ showNavbar })
     }
   }
   render() {
-    console.log('Current toggle value', this.state.showNavbar);
     return <div className='Navbar-Container'>
       <div className='NavBar-logo' >
         <img className='Navbar-symbol' onClick={this.toggleNavBar} src={(this.state.showNavbar ? crossLogoSVG : navBarLogoSVG)} alt='Navbar symbol'></img>
