@@ -20,7 +20,7 @@ class HomeComponent extends Component {
                     <div className='Bio'>
                         <BioComponent ></BioComponent>
                     </div>
-                    <div className='Time-line'>
+                    <div className='Time-line' id='Time-line'>
                         <Switch>
                             <Route exact path={'/experience'} render={(props) =>
                                 <ExperienceComponent {...props} data={experienceData} />

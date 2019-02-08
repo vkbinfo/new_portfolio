@@ -22,11 +22,18 @@ class NavBarComponent extends Component {
       this.setState({ showNavbar })
     }
   }
+
+  onNavClick() {
+    if (document.body.clientWidth < 600) {
+      document.getElementById("Time-line").scrollIntoView();
+    }
+  }
+
   render() {
     return <div className='Navbar-Container'>
       <div className='NavBar-logo' >
         <img className='Navbar-symbol' onClick={this.toggleNavBar} src={(this.state.showNavbar ? crossLogoSVG : navBarLogoSVG)} alt='Navbar symbol'></img>
-        <div className={'Navbar ' + (this.state.showNavbar ? 'Display' : 'No-display')} onClick={this.toggleNavBar}>
+        <div className={'Navbar ' + (this.state.showNavbar ? 'Display' : 'No-display')} onClick={() => { this.toggleNavBar(); this.onNavClick(); }}  >
           <NavLink to="/projects" className="Nav-element" activeClassName="Selected">
             Projects
         </NavLink>
