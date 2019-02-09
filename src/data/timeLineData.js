@@ -28,7 +28,7 @@ let experienceData = {
     heading: 'Chegg India',
     subheading: 'Expert QA',
     timeTaken: '(Jan-2018 to May-2018)',
-    discription: 'Answer questions and gave expert advice. Solve technical problems through research and collaboration. Languages'
+    discription: 'Answer questions and gave expert advice. Solve technical problems through research and collaboration.'
   },
   ]
 }
