@@ -4,12 +4,9 @@ import './aboutComponent.css'
 
 class AboutComponent extends Component {
   render() {
-    return <div class='About'>
+    return (<div class='About'>
       <h3> About Vikash Kumar Bijarnia</h3>
-      <p> I am a full stack developer. I love to learn new technologies, making mistakes and learning from them(Don't worrry I will not make mistakes in production).
-        I like to solve logical problems on back-end. I like to work remotely.
-         I follow 3p's of my life, and these are Programming, Philosophy, and Psychology.
-         I love to read about Philosophy(To make myself question everything.).
+      <p>I am a full stack developer. I know JavaScript, Python, and Java(Expertise in Same Order). With time I am becoming a language agnostic person. Although I love JavaScript and Python. I have a love for JavaScript's Asynchronous behavior. I love to learn new technologies, making mistakes and learning from them(Don't worry I will not make mistakes in production).  My interest lies in solving logical problems on the back-end and handling that logical problem solution on front-end. Remote work is something that I look for, all the artist works remotely in a way (Yes, I do consider myself as an artist, I also write code then rewrite it. and I do understand the value of teamwork).  There is a 3p's principle in my life that says, follow Programming, Philosophy, and Psychology. Apart from programming, I love to read about Philosophy(To make myself question about stuff).
          Currently learning ReasonML and always learning how to be a better software Engineer.
       </p>
       <p>
@@ -27,8 +24,8 @@ class AboutComponent extends Component {
 
       <p className='Links'>Contact info:</p>
       <a href="mailto:vkb.info@gmail.com">vkb.info@gmail.com</a>
-    </div>
-  }
+    </div>)
+  };
 }
 
 export default AboutComponent;
