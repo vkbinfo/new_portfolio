@@ -5,10 +5,7 @@ import './App.css';
 
 class App extends Component {
   render() {
-    return <Switch>
-      <Route path='/' component={HomeComponent}></Route>
-      <Redirect from='/' to='/' />
-    </Switch>;
+    return <Route path='/' component={HomeComponent}></Route>
   }
 }
 
