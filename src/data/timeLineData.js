@@ -6,30 +6,40 @@ let experienceData = {
   flexDirectionStyle: {
     'flex-direction': 'row-reverse',
   },
-  coreData: [{
-    imageTag: 'Pesto Tech',
-    imageSrc: "https://d1qb2nb5cznatu.cloudfront.net/startups/i/5001643-cc60fc70ac9239ed7f038da685f19928-medium_jpg.jpg?buster=1512196533",
-    heading: 'Pesto Tech',
-    subheading: 'JavaScript Developer',
-    timeTaken: '(Jan-2019)',
-    discription: 'Working on some Open Source Projects and also on a personal project.'
-  },
-  {
-    imageTag: 'Elucidata',
-    imageSrc: "https://d1qb2nb5cznatu.cloudfront.net/startups/i/800274-9da7166416e86d872510e14f8059d1b8-medium_jpg.jpg?buster=1504338785",
-    heading: 'Elucidata',
-    subheading: 'Full Stack Developer',
-    timeTaken: '(July-2018 to Dec-2018)',
-    discription: 'Front-end Development in Angular2.'
-  },
-  {
-    imageTag: 'Chegg India',
-    imageSrc: "https://img.grouponcdn.com/coupons/3G3tpCYibBfoFJ36FAzVBh/chegg-logo-500x500/v1/t200x200.png",
-    heading: 'Chegg India',
-    subheading: 'Expert QA',
-    timeTaken: '(Jan-2018 to May-2018)',
-    discription: 'Answer questions and gave expert advice. Solve technical problems through research and collaboration.'
-  },
+  coreData: [
+    {
+      imageTag: 'Udacity',
+      imageSrc: "https://d1qb2nb5cznatu.cloudfront.net/startups/i/113563-0d042ff7bd710ce95c303aa3f93c8522-medium_jpg.jpg?buster=1456467302",
+      heading: 'Udacity',
+      subheading: 'Software Engineering Mentor',
+      timeTaken: '(Feb-2019)',
+      discription: 'I mentor up to 15 students in Udacity Front End Nanodegree in each cohort. I help them Learn JavaScript, debugging problems, and sharing my knowledge about Computer Science. My main goal with the students is to teach them how to become a true software Engineer(although, I myself is on a never-ending journey to become a better software engineer).'
+    },
+    {
+      imageTag: 'Pesto Tech',
+      imageSrc: "https://d1qb2nb5cznatu.cloudfront.net/startups/i/5001643-cc60fc70ac9239ed7f038da685f19928-medium_jpg.jpg?buster=1512196533",
+      heading: 'Pesto Tech',
+      subheading: 'JavaScript Developer',
+      timeTaken: '(Jan-2019)',
+      discription: 'Diving deep in JavaScript, Trying to contribute to Open Source Projects and Learning Best Software Engineering practices.'
+    },
+    {
+      imageTag: 'Elucidata',
+      imageSrc: "https://d1qb2nb5cznatu.cloudfront.net/startups/i/800274-9da7166416e86d872510e14f8059d1b8-medium_jpg.jpg?buster=1504338785",
+      heading: 'Elucidata',
+      subheading: 'Full Stack Developer',
+      timeTaken: '(July-2018 to Dec-2018)',
+      discription: `Worked on a biotech SASS platform called Polly, My main work was handling legacy code, building a new authentication system
+      and also working on Project dashboard implementing some new feature and enhancing the older ones.`
+    },
+    {
+      imageTag: 'Chegg India',
+      imageSrc: "https://img.grouponcdn.com/coupons/3G3tpCYibBfoFJ36FAzVBh/chegg-logo-500x500/v1/t200x200.png",
+      heading: 'Chegg India',
+      subheading: 'Expert QA',
+      timeTaken: '(Jan-2018 to May-2018)',
+      discription: 'Answer questions and gave expert advice. Solve technical problems through research and collaboration.'
+    },
   ]
 }
 
