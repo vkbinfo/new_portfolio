@@ -17,9 +17,9 @@ class AboutComponent extends Component {
       <h3 className='Links'>Links</h3>
       <ul>
         <li><a href="https://angel.co/vikash-kumar-bijarnia" >AngelList</a></li>
-        <li><a href="https://github.com/vkbinfo" >Github</a></li>
+        <li><a href="https://github.com/vikash-eatgeek" >Github</a></li>
         <li><a href="https://stackoverflow.com/users/6603988/simplemath" >StackOverFlow</a></li>
-        <li><a href="https://www.linkedin.com/in/vikash-kumar-bijarnia-6108a1a1/" >LinkeIn</a></li>
+        <li><a href="https://www.linkedin.com/in/vikash-kumar-bijarnia-6108a1a1/" >LinkedIn</a></li>
       </ul>
 
       <p className='Links'>Contact info:</p>
